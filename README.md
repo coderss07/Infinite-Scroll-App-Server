@@ -1,4 +1,4 @@
-#Server for Infinite Scroll App
+# Server for Infinite Scroll App
 
 ## Getting Started with Server for the project given below
 
