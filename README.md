@@ -1,6 +1,8 @@
-# Getting Started with Server for the project given below
+#Server for Infinite Scroll App
 
-Github Link:
+## Getting Started with Server for the project given below
+
+Github Link: https://github.com/coderss07/Infinite-Scroll-App
 
 ## Available Scripts
 
