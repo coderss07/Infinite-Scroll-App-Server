@@ -26,7 +26,7 @@ db.sequelize.sync();
 //   initial();
 // });
 
-app.use(express.static(path.resolve(__dirname, '../infinite-scroll/build')));
+app.use(express.static(path.resolve(__dirname, './infinite-scroll/build')));
 
 // simple route
 app.get("/", (req, res) => {
@@ -38,7 +38,7 @@ require('./app/routes/auth.routes')(app);
 require('./app/routes/user.routes')(app);
 
 app.get('*', (req, res) => {
-  res.sendFile(path.resolve(__dirname, '../infinite-scroll/build', 'index.html'));
+  res.sendFile(path.resolve(__dirname, './infinite-scroll/build', 'index.html'));
 });
 
 // set port, listen for requests
