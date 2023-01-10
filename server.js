@@ -26,6 +26,8 @@ db.sequelize.sync();
 //   initial();
 // });
 
+app.use(express.static(path.resolve(__dirname, '../infinite-scroll/build')));
+
 // simple route
 app.get("/", (req, res) => {
   res.json({ message: "This is Infinite-Scroll-App" });
@@ -34,6 +36,10 @@ app.get("/", (req, res) => {
 // routes
 require('./app/routes/auth.routes')(app);
 require('./app/routes/user.routes')(app);
+
+app.get('*', (req, res) => {
+  res.sendFile(path.resolve(__dirname, '../infinite-scroll/build', 'index.html'));
+});
 
 // set port, listen for requests
 const PORT = process.env.PORT || 8080;

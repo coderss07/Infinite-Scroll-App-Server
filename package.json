@@ -4,7 +4,9 @@
   "description": "react-infinite-scroll Authentication",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/index.js",
+    "build": "cd infinite-scroll && npm install && npm run build"
   },
   "keywords": [
     "node.js",
