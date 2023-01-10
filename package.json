@@ -15,6 +15,9 @@
     "authentication",
     "mysql"
   ],
+  "engines": {
+    "node": "16.13.1"
+  },
   "author": "Sarthak Sharma",
   "license": "ISC",
   "dependencies": {
