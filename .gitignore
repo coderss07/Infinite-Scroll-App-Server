@@ -7,6 +7,7 @@ infinite-scroll/.pnp.js
 /node_modules
 /.pnp
 .pnp.js
+infinite-scroll/.env
 
 # testing
 infinite-scroll/coverage
